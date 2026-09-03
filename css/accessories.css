@@ -1,0 +1,640 @@
+/* =====================================================
+   BLUE GEM CYBER
+   ACCESSORIES / SHOP PAGE
+   ===================================================== */
+
+
+/* ================= SHOP HERO ================= */
+
+.shop-hero {
+    min-height: 520px;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(circle at 85% 25%, rgba(11, 94, 215, 0.13), transparent 30%),
+        radial-gradient(circle at 10% 85%, rgba(11, 94, 215, 0.08), transparent 30%),
+        linear-gradient(135deg, #f5f9ff, #eaf3ff);
+}
+
+.shop-hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 320px;
+    height: 320px;
+
+    right: -110px;
+    top: 70px;
+
+    border: 2px solid rgba(11, 94, 215, 0.08);
+
+    border-radius: 50%;
+}
+
+.shop-hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    left: -70px;
+    bottom: -50px;
+
+    border: 2px solid rgba(11, 94, 215, 0.08);
+
+    border-radius: 50%;
+}
+
+.shop-hero-content {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: auto;
+
+    position: relative;
+    z-index: 2;
+}
+
+.shop-hero h1 {
+    max-width: 850px;
+
+    margin-bottom: 22px;
+
+    color: #111827;
+
+    font-size: clamp(2.8rem, 6vw, 4.8rem);
+
+    line-height: 1.08;
+
+    letter-spacing: -2px;
+}
+
+.shop-hero h1 span {
+    display: block;
+
+    color: #0b5ed7;
+}
+
+.shop-hero p {
+    max-width: 700px;
+
+    margin-bottom: 30px;
+
+    color: #4b5563;
+
+    font-size: 1.05rem;
+
+    line-height: 1.8;
+}
+
+.shop-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.btn-primary,
+.btn-secondary {
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    border-radius: 8px;
+
+    font-size: 0.95rem;
+
+    font-weight: 700;
+
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: #0b5ed7;
+
+    color: #ffffff;
+
+    box-shadow: 0 8px 20px rgba(11, 94, 215, 0.18);
+}
+
+.btn-primary:hover {
+    background: #084db3;
+
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: #ffffff;
+
+    color: #0b5ed7;
+
+    border: 1px solid #d7e3f5;
+}
+
+.btn-secondary:hover {
+    background: #f1f6fd;
+
+    transform: translateY(-2px);
+}
+
+
+/* ================= INTRO ================= */
+
+.shop-intro {
+    padding: 90px 5% 40px;
+
+    background: #ffffff;
+}
+
+.section-heading {
+    max-width: 760px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.section-tag {
+    display: inline-block;
+
+    margin-bottom: 16px;
+
+    color: #0b5ed7;
+
+    font-size: 0.8rem;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+.section-heading h2 {
+    margin-bottom: 18px;
+
+    color: #111827;
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    line-height: 1.15;
+}
+
+.section-heading p {
+    color: #6b7280;
+
+    line-height: 1.8;
+}
+
+
+/* ================= PRODUCTS ================= */
+
+.products-section {
+    padding: 60px 5% 100px;
+
+    background: #ffffff;
+}
+
+.products-grid {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 22px;
+}
+
+.product-card {
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e9f4;
+
+    border-radius: 14px;
+
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #c6d8ef;
+
+    box-shadow: 0 15px 35px rgba(17, 24, 39, 0.08);
+}
+
+
+/* ================= PRODUCT IMAGE ================= */
+
+.product-image {
+    height: 180px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        linear-gradient(135deg, #eef5ff, #f8fbff);
+
+    font-size: 4.5rem;
+
+    border-bottom: 1px solid #e7eef8;
+}
+
+
+/* ================= PRODUCT CONTENT ================= */
+
+.product-content {
+    padding: 24px;
+}
+
+.product-category {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #0b5ed7;
+
+    font-size: 0.7rem;
+
+    font-weight: 800;
+
+    letter-spacing: 1.2px;
+}
+
+.product-content h3 {
+    margin-bottom: 12px;
+
+    color: #111827;
+
+    font-size: 1.15rem;
+
+    line-height: 1.3;
+}
+
+.product-content p {
+    min-height: 90px;
+
+    margin-bottom: 20px;
+
+    color: #6b7280;
+
+    font-size: 0.88rem;
+
+    line-height: 1.7;
+}
+
+.product-footer {
+    padding-top: 17px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    border-top: 1px solid #edf1f6;
+}
+
+.product-footer span {
+    color: #6b7280;
+
+    font-size: 0.72rem;
+
+    line-height: 1.4;
+}
+
+.product-footer a {
+    flex-shrink: 0;
+
+    color: #0b5ed7;
+
+    font-size: 0.82rem;
+
+    font-weight: 700;
+}
+
+.product-footer a:hover {
+    color: #084db3;
+}
+
+
+/* ================= HOW TO BUY ================= */
+
+.how-to-buy {
+    padding: 100px 5%;
+
+    background: #f7faff;
+}
+
+.steps-grid {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.step-card {
+    padding: 30px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2ebf7;
+
+    border-radius: 14px;
+
+    transition: all 0.3s ease;
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 28px rgba(17, 24, 39, 0.07);
+}
+
+.step-number {
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: #0b5ed7;
+
+    font-size: 1.8rem;
+
+    font-weight: 900;
+}
+
+.step-card h3 {
+    margin-bottom: 12px;
+
+    color: #111827;
+
+    font-size: 1.15rem;
+}
+
+.step-card p {
+    color: #6b7280;
+
+    font-size: 0.9rem;
+
+    line-height: 1.7;
+}
+
+
+/* ================= SHOP CTA ================= */
+
+.shop-cta {
+    padding: 100px 5%;
+
+    background: #0f172a;
+}
+
+.shop-cta-content {
+    max-width: 800px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.shop-cta .section-tag {
+    color: #60a5fa;
+}
+
+.shop-cta h2 {
+    margin-bottom: 20px;
+
+    color: #ffffff;
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    line-height: 1.2;
+}
+
+.shop-cta p {
+    margin-bottom: 30px;
+
+    color: #cbd5e1;
+
+    line-height: 1.8;
+}
+
+.shop-cta .btn-primary {
+    display: inline-block;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #020617;
+
+    color: #ffffff;
+}
+
+.footer-content {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 70px 5%;
+
+    display: grid;
+
+    grid-template-columns: 1.4fr 1fr 1fr;
+
+    gap: 50px;
+}
+
+.footer-content h3 {
+    margin-bottom: 18px;
+
+    color: #ffffff;
+}
+
+.footer-about p,
+.footer-contact p {
+    margin-bottom: 10px;
+
+    color: #94a3b8;
+
+    line-height: 1.7;
+}
+
+.footer-links {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+.footer-links a {
+    margin-bottom: 10px;
+
+    color: #94a3b8;
+
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    padding: 20px 5%;
+
+    text-align: center;
+
+    border-top: 1px solid #1e293b;
+}
+
+.footer-bottom p {
+    color: #64748b;
+
+    font-size: 0.85rem;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1100px) {
+
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+/* ================= SMALL TABLET ================= */
+
+@media (max-width: 850px) {
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 650px) {
+
+    .shop-hero {
+        min-height: 480px;
+    }
+
+    .shop-hero h1 {
+        font-size: 2.7rem;
+
+        letter-spacing: -1px;
+    }
+
+    .shop-hero p {
+        font-size: 1rem;
+    }
+
+    .shop-buttons {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .shop-buttons a {
+        text-align: center;
+    }
+
+    .shop-intro,
+    .products-section,
+    .how-to-buy,
+    .shop-cta {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .shop-intro {
+        padding-top: 70px;
+    }
+
+    .products-section {
+        padding-top: 40px;
+        padding-bottom: 70px;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-image {
+        height: 200px;
+    }
+
+    .product-content p {
+        min-height: auto;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+}
+
+
+/* ================= SMALL PHONES ================= */
+
+@media (max-width: 450px) {
+
+    .shop-hero h1 {
+        font-size: 2.35rem;
+    }
+
+    .section-heading h2 {
+        font-size: 2rem;
+    }
+
+    .product-content {
+        padding: 22px;
+    }
+
+    .step-card {
+        padding: 25px;
+    }
+
+}

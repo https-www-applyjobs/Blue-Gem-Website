@@ -1,0 +1,550 @@
+/* ================================
+   APPS & WEBSITE CREATION PAGE
+================================ */
+
+
+/* HERO */
+.development-hero {
+    min-height: 560px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #eef6ff, #ffffff);
+}
+
+.development-hero-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.hero-label,
+.section-label {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: #0b5ed7;
+}
+
+.development-hero h1 {
+    margin-bottom: 20px;
+    font-size: 3.5rem;
+    line-height: 1.1;
+    font-weight: 800;
+    color: #111827;
+}
+
+.development-hero p {
+    max-width: 720px;
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #6b7280;
+}
+
+
+/* BUTTONS */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.primary-btn {
+    background: #0b5ed7;
+    color: #ffffff;
+}
+
+.primary-btn:hover {
+    background: #084ca8;
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    background: #ffffff;
+    color: #0b5ed7;
+    border: 1px solid #0b5ed7;
+}
+
+.secondary-btn:hover {
+    background: #0b5ed7;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+
+/* GENERAL CONTAINER */
+.section-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* INTRO */
+.development-intro {
+    padding: 90px 0;
+    text-align: center;
+    background: #ffffff;
+}
+
+.development-intro .section-container {
+    max-width: 850px;
+}
+
+.development-intro h2 {
+    margin-bottom: 20px;
+    font-size: 2.3rem;
+    color: #111827;
+}
+
+.development-intro p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #6b7280;
+}
+
+
+/* SECTION HEADINGS */
+.section-heading {
+    max-width: 750px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    margin-bottom: 15px;
+    font-size: 2.3rem;
+    color: #111827;
+}
+
+.section-heading p {
+    line-height: 1.7;
+    color: #6b7280;
+}
+
+
+/* DEVELOPMENT SERVICES */
+.development-services {
+    padding: 90px 0;
+    background: #f8fafc;
+}
+
+.development-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.development-card {
+    position: relative;
+    padding: 35px 30px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    transition: all 0.3s ease;
+}
+
+.development-card:hover {
+    transform: translateY(-7px);
+    border-color: #0b5ed7;
+    box-shadow: 0 12px 30px rgba(11, 94, 215, 0.1);
+}
+
+.development-icon {
+    width: 65px;
+    height: 65px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eef6ff;
+    border-radius: 12px;
+    font-size: 2rem;
+}
+
+.service-number {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: #9ca3af;
+}
+
+.development-card h3 {
+    margin-bottom: 12px;
+    font-size: 1.25rem;
+    color: #111827;
+}
+
+.development-card > p {
+    margin-bottom: 20px;
+    font-size: 0.92rem;
+    line-height: 1.7;
+    color: #6b7280;
+}
+
+.development-card ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.development-card li {
+    position: relative;
+    margin-bottom: 9px;
+    padding-left: 20px;
+    font-size: 0.88rem;
+    color: #4b5563;
+}
+
+.development-card li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #0b5ed7;
+    font-weight: 800;
+}
+
+
+/* TECHNOLOGIES */
+.technologies {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.technology-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.technology-card {
+    padding: 30px 24px;
+    text-align: center;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.technology-card:hover {
+    transform: translateY(-5px);
+    border-color: #0b5ed7;
+    background: #ffffff;
+}
+
+.technology-card > span {
+    display: block;
+    margin-bottom: 18px;
+    font-size: 2rem;
+}
+
+.technology-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+    color: #111827;
+}
+
+.technology-card p {
+    font-size: 0.88rem;
+    line-height: 1.7;
+    color: #6b7280;
+}
+
+
+/* DEVELOPMENT PROCESS */
+.development-process {
+    padding: 90px 0;
+    background: #f8fafc;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.process-card {
+    padding: 30px 24px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.process-card:hover {
+    transform: translateY(-5px);
+    border-color: #0b5ed7;
+}
+
+.process-number {
+    display: block;
+    margin-bottom: 18px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #0b5ed7;
+}
+
+.process-card h3 {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    color: #111827;
+}
+
+.process-card p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: #6b7280;
+}
+
+
+/* WHY BLUE GEM */
+.why-development {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.why-card {
+    padding: 30px 24px;
+    text-align: center;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.why-icon {
+    margin-bottom: 18px;
+    font-size: 2rem;
+}
+
+.why-card h3 {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    color: #111827;
+}
+
+.why-card p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: #6b7280;
+}
+
+
+/* CTA */
+.development-cta {
+    padding: 90px 20px;
+    background: #0b5ed7;
+    text-align: center;
+}
+
+.cta-container {
+    max-width: 750px;
+    margin: auto;
+}
+
+.development-cta h2 {
+    margin-bottom: 18px;
+    font-size: 2.4rem;
+    color: #ffffff;
+}
+
+.development-cta p {
+    margin-bottom: 30px;
+    line-height: 1.7;
+    color: #dbeafe;
+}
+
+.cta-btn {
+    background: #ffffff;
+    color: #0b5ed7;
+}
+
+.cta-btn:hover {
+    background: #eaf2ff;
+    transform: translateY(-2px);
+}
+
+
+/* FOOTER */
+footer {
+    background: #111827;
+    color: #ffffff;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 50px;
+}
+
+.footer-brand h3 {
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+
+.footer-brand p {
+    max-width: 400px;
+    color: #9ca3af;
+    line-height: 1.7;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links h4 {
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.footer-links a {
+    color: #9ca3af;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #60a5fa;
+}
+
+.footer-bottom {
+    padding: 20px;
+    border-top: 1px solid #374151;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #9ca3af;
+    font-size: 0.85rem;
+}
+
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 1050px) {
+
+    .development-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .technology-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .development-hero h1 {
+        font-size: 3rem;
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .development-hero {
+        min-height: 500px;
+    }
+
+    .development-hero h1 {
+        font-size: 2.6rem;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .development-hero {
+        padding: 70px 20px;
+    }
+
+    .development-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .development-hero p {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .development-intro,
+    .development-services,
+    .technologies,
+    .development-process,
+    .why-development {
+        padding: 70px 0;
+    }
+
+    .section-heading h2,
+    .development-intro h2 {
+        font-size: 2rem;
+    }
+
+    .development-grid,
+    .technology-grid,
+    .process-grid,
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .development-cta h2 {
+        font-size: 2rem;
+    }
+}

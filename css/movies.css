@@ -1,0 +1,521 @@
+/* ================================
+   MOVIES & SERIES PAGE
+================================ */
+
+
+/* HERO */
+.movies-hero {
+    min-height: 560px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #eef6ff, #ffffff);
+}
+
+.movies-hero-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.hero-label,
+.section-label {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: #0b5ed7;
+}
+
+.movies-hero h1 {
+    margin-bottom: 20px;
+    font-size: 3.5rem;
+    line-height: 1.1;
+    font-weight: 800;
+    color: #111827;
+}
+
+.movies-hero p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #6b7280;
+}
+
+
+/* BUTTONS */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.primary-btn {
+    background: #0b5ed7;
+    color: #ffffff;
+}
+
+.primary-btn:hover {
+    background: #084ca8;
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    background: #ffffff;
+    color: #0b5ed7;
+    border: 1px solid #0b5ed7;
+}
+
+.secondary-btn:hover {
+    background: #0b5ed7;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+
+/* GENERAL CONTAINER */
+.section-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* INTRO */
+.movies-intro {
+    padding: 90px 0;
+    text-align: center;
+    background: #ffffff;
+}
+
+.movies-intro .section-container {
+    max-width: 850px;
+}
+
+.movies-intro h2 {
+    margin-bottom: 20px;
+    font-size: 2.3rem;
+    color: #111827;
+}
+
+.movies-intro p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #6b7280;
+}
+
+
+/* SECTION HEADINGS */
+.section-heading {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 50px;
+}
+
+.section-heading h2 {
+    margin-bottom: 15px;
+    font-size: 2.3rem;
+    color: #111827;
+}
+
+.section-heading p {
+    color: #6b7280;
+    line-height: 1.7;
+}
+
+
+/* CATEGORIES */
+.movie-categories {
+    padding: 90px 0;
+    background: #f8fafc;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.category-card {
+    padding: 35px 28px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-7px);
+    border-color: #0b5ed7;
+    box-shadow: 0 12px 30px rgba(11, 94, 215, 0.1);
+}
+
+.category-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eef6ff;
+    border-radius: 50%;
+    font-size: 2rem;
+}
+
+.category-card h3 {
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+    color: #111827;
+}
+
+.category-card p {
+    margin-bottom: 18px;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #6b7280;
+}
+
+.availability {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #f1f5f9;
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #64748b;
+}
+
+
+/* MEDIA SERVICES */
+.media-services {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.media-card {
+    padding: 30px 24px;
+    border-radius: 12px;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s ease;
+}
+
+.media-card:hover {
+    transform: translateY(-5px);
+    border-color: #0b5ed7;
+    background: #ffffff;
+}
+
+.media-icon {
+    margin-bottom: 18px;
+    font-size: 2rem;
+}
+
+.media-card h3 {
+    margin-bottom: 12px;
+    color: #111827;
+    font-size: 1.1rem;
+}
+
+.media-card p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: #6b7280;
+}
+
+
+/* WHY BLUE GEM */
+.why-movies {
+    padding: 90px 0;
+    background: #f8fafc;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.why-card {
+    padding: 30px 24px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.why-icon {
+    margin-bottom: 18px;
+    font-size: 2rem;
+}
+
+.why-card h3 {
+    margin-bottom: 12px;
+    color: #111827;
+    font-size: 1.1rem;
+}
+
+.why-card p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: #6b7280;
+}
+
+
+/* HOW IT WORKS */
+.how-it-works {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.step-card {
+    position: relative;
+    padding: 35px 30px;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    background: #ffffff;
+}
+
+.step-number {
+    display: block;
+    margin-bottom: 18px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #0b5ed7;
+}
+
+.step-card h3 {
+    margin-bottom: 12px;
+    color: #111827;
+}
+
+.step-card p {
+    font-size: 0.92rem;
+    line-height: 1.7;
+    color: #6b7280;
+}
+
+
+/* CTA */
+.movies-cta {
+    padding: 90px 20px;
+    background: #0b5ed7;
+    text-align: center;
+}
+
+.cta-container {
+    max-width: 750px;
+    margin: auto;
+}
+
+.movies-cta h2 {
+    margin-bottom: 18px;
+    font-size: 2.4rem;
+    color: #ffffff;
+}
+
+.movies-cta p {
+    margin-bottom: 30px;
+    line-height: 1.7;
+    color: #dbeafe;
+}
+
+.cta-btn {
+    background: #ffffff;
+    color: #0b5ed7;
+}
+
+.cta-btn:hover {
+    background: #eaf2ff;
+    transform: translateY(-2px);
+}
+
+
+/* FOOTER */
+footer {
+    background: #111827;
+    color: #ffffff;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 50px;
+}
+
+.footer-brand h3 {
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+
+.footer-brand p {
+    max-width: 400px;
+    color: #9ca3af;
+    line-height: 1.7;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links h4 {
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.footer-links a {
+    color: #9ca3af;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #60a5fa;
+}
+
+.footer-bottom {
+    padding: 20px;
+    border-top: 1px solid #374151;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #9ca3af;
+    font-size: 0.85rem;
+}
+
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 1000px) {
+
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .media-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .movies-hero h1 {
+        font-size: 3rem;
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .movies-hero {
+        min-height: 500px;
+    }
+
+    .movies-hero h1 {
+        font-size: 2.6rem;
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .movies-hero {
+        padding: 70px 20px;
+    }
+
+    .movies-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .movies-hero p {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .movies-intro,
+    .movie-categories,
+    .media-services,
+    .why-movies,
+    .how-it-works {
+        padding: 70px 0;
+    }
+
+    .section-heading h2,
+    .movies-intro h2 {
+        font-size: 2rem;
+    }
+
+    .category-grid,
+    .media-grid,
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .movies-cta h2 {
+        font-size: 2rem;
+    }
+}
